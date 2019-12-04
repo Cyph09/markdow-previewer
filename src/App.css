@@ -1,91 +1,90 @@
 .AppHeader {
-    text-align: center;
+  text-align: center;
 }
 
 .AppMain {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #editor {
-    width: 85%;
-    height: 70vh;
-    resize: none;
-    padding: 1rem;
-    outline: none;
-    font-size: 1.2rem;
-    border: none;
-    overflow-y: auto;
+  width: 85%;
+  height: 70vh;
+  resize: none;
+  padding: 1rem;
+  outline: none;
+  font-size: 1.2rem;
+  border: none;
+  overflow-y: auto;
 }
 
 #preview {
-    height: 70vh;
-    border-radius: 4px;
-    padding: 1rem;
-    background: #ffffff;
-    overflow-y: auto;
+  height: 70vh;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #ffffff;
+  overflow-y: auto;
 }
 
-/* markdown styling */
+/* markdown styles */
 #preview h1,
 h2 {
-    border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 #preview code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
-    background: #f6ffc1;
-    padding: 0 3px;
-    color: #555;
-    border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  background: #f6ffc1;
+  padding: 0 3px;
+  color: #555;
+  border-radius: 3px;
 }
 
 #preview pre {
-    background: #f6ffc1;
-    padding: 5px 0 5px 5px;
-    line-height: 1.45;
-    overflow: auto;
-    color: #fc1588;
-    border-radius: 3px;
+  background: #f6ffc1;
+  padding: 5px 0 5px 5px;
+  line-height: 1.45;
+  overflow: auto;
+  color: #fc1588;
+  border-radius: 3px;
 }
 
 #preview blockquote {
-    border-left: 3px solid #7e817d;
-    padding: 0 1rem;
+  border-left: 3px solid #7e817d;
+  padding: 0 1rem;
 }
 
 #preview table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 #preview tbody tr:nth-child(odd) {
-    background: #f9f9f9;
+  background: #f9f9f9;
 }
 
 #preview td,
 th {
-    border: 1px solid #ccc;
-    padding: 0.6rem 1.3rem;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1.3rem;
 }
 
 #preview img {
-    width: 40%;
-    height: 30%;
+  width: 40%;
+  height: 30%;
 }
 
 @media screen and (max-width: 680px) {
-    .App {
-        flex-direction: column;
-        align-items: center;
-    }
+  .App {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
-
-    #editor,
-    #preview {
-        max-height: 40vh;
-    }
+  #editor,
+  #preview {
+    max-height: 40vh;
+  }
 }
