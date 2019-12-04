@@ -12,15 +12,6 @@
     justify-content: space-evenly;
 }
 
-.Pane {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 45%;
-    margin: 10px 5px 20px 5px;
-    border-radius: 5px;
-}
-
 #editor {
     width: 85%;
     height: 70vh;
@@ -38,6 +29,54 @@
     padding: 1rem;
     background: #ffffff;
     overflow-y: auto;
+}
+
+/* markdown styling */
+#preview h1,
+h2 {
+    border-bottom: 1px solid #eee;
+}
+
+#preview code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    background: #f6ffc1;
+    padding: 0 3px;
+    color: #555;
+    border-radius: 3px;
+}
+
+#preview pre {
+    background: #f6ffc1;
+    padding: 5px 0 5px 5px;
+    line-height: 1.45;
+    overflow: auto;
+    color: #fc1588;
+    border-radius: 3px;
+}
+
+#preview blockquote {
+    border-left: 3px solid #7e817d;
+    padding: 0 1rem;
+}
+
+#preview table {
+    border-collapse: collapse;
+}
+
+#preview tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+#preview td,
+th {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1.3rem;
+}
+
+#preview img {
+    width: 40%;
+    height: 30%;
 }
 
 @media screen and (max-width: 680px) {
