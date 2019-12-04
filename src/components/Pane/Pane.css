@@ -1,0 +1,27 @@
+.Pane {
+    border: 2px solid #eff0f1;
+    min-width: 15rem;
+    width: 100%;
+    border-radius: 4px;
+    margin: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.Pane-header {
+    padding: 0.5rem;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Pane-header-title {
+    color: #1d1c1c;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 680px) {
+    .Pane {
+        width: 90%;
+    }
+}

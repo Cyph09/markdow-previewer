@@ -1,15 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Editor extends Component {
-  render() {
-    return (
-      <div>
-        <form>
-          <input type="text" name="editor" />
-        </form>
-      </div>
-    );
-  }
-}
-
+const Editor = props => {
+  return <textarea id="editor" value={props.value} onChange={props.changed} />;
+};
 export default Editor;

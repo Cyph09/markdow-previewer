@@ -1,8 +1,14 @@
 import React from "react";
-const Previewer = props => (
-  <div>
-    <h4>Previewer</h4>
-  </div>
-);
+import marked from "marked";
+
+const Previewer = ({ markdown }) => {
+  marked.setOptions({
+    breaks: true,
+    gfm: true
+  });
+  return (
+    <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }} />
+  );
+};
 
 export default Previewer;
